@@ -34,6 +34,7 @@ Then use as normal:
 pvlogin
 
 # use 'pv' in-place of 'vault'
+export VAULT_TOKEN=hvc.123.abc
 pv status
 pv kv get kv/test
 ... etc ...
