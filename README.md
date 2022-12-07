@@ -19,7 +19,7 @@ sudo mv vlogin /usr/local/bin/vlogin
 Put this function in your .bashrc file:
 
 ```bash
-pv() { vault $1 -header "Authorization=Pomerium $(cat ~/.pomerium_jwt)"; }
+pv() { vault $1 -header "Authorization=Pomerium $(cat ~/.pomerium_jwt)" $2 $3 $4; }
 ```
 
 Restart your terminal or
